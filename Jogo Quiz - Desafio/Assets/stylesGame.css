@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-one: #BBD6B8;
+    --color-two: #AEC2B6;
+    --color-tree: #94AF9F;
+    --color-four: #DBE4C6;
+}
+
+body{
+    background-image: url('https://a-static.besthdwallpaper.com/morning-scenery-wallpaper-2560x2048-81084_33.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.layout{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    filter: brightness();
+    display: flex;
+    flex-direction: column;
+}
+
+
+.layoutForm{
+    display: flex;
+    width: 35%;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-four);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    border: solid 2px black;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    text-align: left;
+    padding: 8px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  th{
+    text-align: left;
+    text-align: center;
+    font-size: 1.2rem;
+    }
+  
+
+  .pergunta-texto{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+  }
+
+.botao-proxima{
+    display: flex;
+    font-size: 1.2rem;
+    width: 150px;
+    position: relative;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-tree);
+    flex-direction: column;
+    border: solid 2px black;
+    padding: 10px;
+    margin-left: 25%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.radio{
+    margin-right: 20px;
+}
+
+.pergunta-texto2{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+  }

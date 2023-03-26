@@ -1,0 +1,71 @@
+Cores do projeto: #37306B, #66347F, #9E4784, #D27685
+
+Fontes: poppins
+
+Features: Design Responsivo, bootstrap, googlefonts, ionic icons
+
+Complete
+Header [X]
+Home [X]
+About [X]
+Skills [x]
+Services []
+Portfolio []
+Testimonial []
+Contact me []
+Footer [X]
+
+Cabeçalho
+ {
+	Lucas (ponto colorido)
+
+	menu
+	{
+		Home 
+		About
+		Skills
+		Services
+		Portfolio 
+		{
+			Testimonial
+		}
+		Contact Me
+	}	
+}
+
+
+Home
+{
+	Lista Socias 
+	{
+		Instagram
+		Discord
+		Github
+		Linkedin
+	}
+
+	Texto Breve
+	{
+		Ola eu sou o lucas
+		- O que eu estou fazendo
+		Botao para entrar em contato
+	}
+
+	Imagem com fundo blob
+	{
+	}
+}
+
+About
+{
+	Imagem lateral
+	Texto breve (introdução)
+	Números
+	{
+		Certificados
+		Meses de experiencia
+		Projetos Concluídos
+	}
+
+}
+

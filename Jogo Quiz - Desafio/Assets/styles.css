@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-one: #BBD6B8;
+    --color-two: #AEC2B6;
+    --color-tree: #94AF9F;
+    --color-four: #DBE4C6;
+}
+
+body{
+    background-image: url('https://a-static.besthdwallpaper.com/morning-scenery-wallpaper-2560x2048-81084_33.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.layout{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    filter: brightness();
+}
+
+
+.layoutForm{
+    display: flex;
+    position: relative;
+    width: 100%px;
+    height: 500px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-four);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+
+}
+
+.botaoInicial{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--color-one);
+    border: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.botaoInicial:hover{
+    color: rgba(0, 0, 0, 0.412);
+    transform: translateY(5px);
+}
+
+.textoInicial{
+    display: block;
+    width: 80%;
+    height: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.iconeInicial{
+    font-size: 50px;
+    margin-top: -25px;
+    margin-bottom: 9px;
+}

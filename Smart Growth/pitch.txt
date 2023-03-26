@@ -1,0 +1,56 @@
+Introdução() {
+	
+	Bom dia meu nome é lucas e vim apresentar a Smart Growth uma ideia de sistema de automação e gerencia de produção
+	utilizando Inteligencia artificial, Automação e Muito Data Science 
+}
+
+Problema (){
+
+	Esse projeto vem pra resolver uma grande dor do pequeno produtor rural, a gestão de produção, o produtor ele é fera em plantar, 
+	mas ele tem dificuldades na hora de realizar a coleta de dados,
+	a análise de dados e tomada de decisões, então muita das vezes ele tem a produção, mas não sabe como ele poderia melhorar a performance daquela plantação 
+ 	então porque não utilizar a tecnologia como aliada para diminuir esse problema
+
+}
+
+
+Solução (){
+
+	A proposta é criar um sistema de coleta de dados em tempo real da produção, com um aplicativo
+	dedicado para monitorar, analisar e tomar decisões com base nos dados coletados pelos sensores e pelo sistema de reconhecimento de imagem com IA.
+
+	Então a ideia é.... Minecraft, Aplicativo, 
+
+	Criar 
+
+
+}
+
+
+Plano de Negócios (){
+
+	E pra isso acontecer da melhor forma possível na prática nosso plano de negócios é voltado em construir parceirias com empresas
+	já existentes, assim a gente entraria com a tecnologia e eles com o know How e base de clientes.
+
+	A renda viria através de 3 meios, a venda do equipamento, o plano mensal do uso do aplicativo e do servidor
+	e manutenção e instalação do equipamento. 
+
+}
+
+
+
+
+Investimento () {
+
+	Para colocar nossa ideia de pé (nosso MVP), precisariamos só de 3 coisas
+	um servidor, um sistema básico de controle para automação com microcontrolador e um aplicativo com interface voltada ao UX/UI
+
+
+	Além disso, uma ponto que deve ser levado em consideração é quanto isso custaria ao produtor, segundo nossas pesquisas,	
+	nosso MVP sairia em torno de XXXXX reais
+	
+}
+
+
+
+

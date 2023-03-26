@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.googleapis.co.css">
+    <link rel="icon" href="https://github.com/oliveeiralucas/PontoBiometrico/blob/main/favicon.png">
+    <title>NPI Development</title>
+
+
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+body *{box-sizing: border-box;}
+.main-login {width: 100vw;height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1 {
+    margin: 0;
+    font-size: 3vw;
+    color:#77ffc0;
+}
+.left-login > h2 {
+    margin: 0;
+    font-size: 1vw;
+    color:#77ffc0;
+}
+.left-login-image{
+    width: 35vw;
+}
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}  
+
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+.btn-login:hover{
+    color: #00ff88;
+    background-color: #2b134b;
+    box-shadow: 5px 15px 40px -12px #7070708f;
+
+
+}
+
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;  
+    }
+    .left-login-image{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+    .grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}  
+</style>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Ponto Eletrônico</h1><br><h2>NPI Development</h2>
+                 <img class="left-login-image" src="https://raw.githubusercontent.com/junior-slv/Lifting-off/8b8e210e36ad7b6ae2b24590028d11fd96f26921/Login-screen/sky.svg" alt="Animation">
+           
+        </div>
+            <div class="right-login">
+              <div class="card-login">
+                <h1>Escolha uma atividade!</h1>
+                 <br>
+                <a href="/acao=GravarBiometria"></a> <button class="btn-login">Gravar digital</button>
+             <br>
+            <a href="/acao=LerBiometria"></a></a><button class="btn-login">Reconhecer digital</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

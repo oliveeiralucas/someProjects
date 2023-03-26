@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesGame.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Quizzical</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="layoutForm">
+           <h1>Quizzical</h1>
+           <!--=========Pergunta 1===========-->
+
+          <div class="pergunta" id="pergunta1">
+            <h3>Pergunta 1:</h3>
+          <p><label><input type="radio" name="resposta1" value="1">Resposta 1</label></p>
+          <p><label><input type="radio" name="resposta1" value="2">Resposta 2</label></p>
+          <p><label><input type="radio" name="resposta1" value="3">Resposta 3</label></p>
+          <p><label><input type="radio" name="resposta1" value="4">Resposta 4</label></p>
+          </div>
+
+        
+          <!--===========pergunta 2 ================-->
+
+          <div class="pergunta" id="pergunta2" style="display: none;">
+            <h3>Pergunta 2:</h3>
+            <label><input type="radio" name="resposta2" value="1">Resposta 1</label></p>
+            <label><input type="radio" name="resposta2" value="2">Resposta 2</label></p>
+            <label><input type="radio" name="resposta2" value="3">Resposta 3</label></p>
+            <label><input type="radio" name="resposta2" value="4">Resposta 4</label></p>
+
+            
+          </div>
+          <!--===============Fim das perguntas==============-->
+        </div>
+        <button class="botao-proxima" onclick="pontuacao()">Próxima <ion-icon name="arrow-forward-outline"></ion-icon></button>
+
+    </div>
+
+   
+    <script>
+
+// Obtenha uma referência para todos os botões de opção (radio buttons)
+var botoesPergunta = document.querySelectorAll('.pergunta input[type="radio"]');
+var selectedButton = null;
+const perguntas1 = document.querySelector('#pergunta1');
+const perguntas2 = document.querySelector('#pergunta2');
+let pontos = 0;
+let perguntaRespondida = 0;
+
+// Adicione um listener para cada botão de opção
+botoesPergunta.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Remova a seleção do botão anteriormente selecionado (se houver)
+    if (selectedButton !== null) {
+      selectedButton.checked = false;
+    }
+    
+    // Salve o botão recém-selecionado como o novo botão selecionado
+    selectedButton = this;
+  });
+});
+
+function pontuacao(){
+  if (perguntas1.offsetHeight > 0) {
+    if (selectedButton !== null && selectedButton.value === '2') {
+        pontos += 1;
+        perguntaRespondida += 1;
+        perguntas1.style.display = 'none';
+      perguntas2.style.display = 'block';
+    } 
+  } 
+  
+  else if (perguntas2.offsetHeight > 0) {
+    if (selectedButton !== null && selectedButton.value === '2') {
+      pontos += 1;
+      perguntaRespondida += 1;
+        perguntas1.style.display = 'none';
+      perguntas2.style.display = 'none';
+    }
+  } 
+  if (pontos >= 0  && perguntaRespondida == 2) {
+    alert('Parabéns! Você acertou ' + pontos +  ' pergunta(s).');
+  }
+  }
+
+
+
+
+    </script>
+</body>
+</html>
+
